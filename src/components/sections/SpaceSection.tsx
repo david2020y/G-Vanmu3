@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion"; // 导入 motion
 
 const spaceImages = [ /* ...图片数据保持不变... */
-  { src: "/images/space1.jpg", alt: "禅修室" }, { src: "/images/space2.jpg", alt: "茶室" }, { src: "/images/space3.jpg", alt: "休息区" },
+  { src: "/images/space1.png", alt: "禅修室" }, { src: "/images/space2.png", alt: "茶室" }, { src: "/images/space3.png", alt: "休息区" },
 ];
 
 const SpaceSection = () => {
