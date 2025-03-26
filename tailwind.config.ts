@@ -10,45 +10,88 @@ const config = {
 	],
   prefix: "", // 通常不需要前缀
   theme: {
-    container: {
-      center: true,
-      padding: "2rem", // 容器默认 padding
-      screens: {
-        "2xl": "1400px", // 容器最大宽度
-      },
-    },
-    extend: { // 扩展默认主题
-      colors: { // 这里定义的颜色可以直接用，比如 bg-brand-beige
-        'brand-beige': '#fdfbf7',
-        'brand-brown': '#8a7d60',
-        'brand-dark': '#4a4a4a',
-         // Shadcn UI 的颜色 (如 background, foreground) 是通过 CSS 变量定义的
-         // 不需要在这里定义，而是由 globals.css 中的变量控制
-         // 例如：bg-background 会去找 --background 变量
-      },
-      keyframes: { // Shadcn UI 可能需要的动画 keyframes
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: { // Shadcn UI 可能需要的动画类
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      borderRadius: { // Shadcn UI 会用到 CSS 变量定义圆角
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: { // 如果你想用 CSS 变量控制字体
-         // sans: ["var(--font-sans)", ...fontFamily.sans], // 示例
-      },
-    },
+  	container: {
+  		center: true,
+  		padding: '2rem',
+  		screens: {
+  			'2xl': '1400px'
+  		}
+  	},
+  	extend: {
+  		colors: {
+  			'brand-beige': '#fdfbf7',
+  			'brand-brown': '#8a7d60',
+  			'brand-dark': '#4a4a4a',
+  			background: 'hsl(var(--background))',
+  			foreground: 'hsl(var(--foreground))',
+  			card: {
+  				DEFAULT: 'hsl(var(--card))',
+  				foreground: 'hsl(var(--card-foreground))'
+  			},
+  			popover: {
+  				DEFAULT: 'hsl(var(--popover))',
+  				foreground: 'hsl(var(--popover-foreground))'
+  			},
+  			primary: {
+  				DEFAULT: 'hsl(var(--primary))',
+  				foreground: 'hsl(var(--primary-foreground))'
+  			},
+  			secondary: {
+  				DEFAULT: 'hsl(var(--secondary))',
+  				foreground: 'hsl(var(--secondary-foreground))'
+  			},
+  			muted: {
+  				DEFAULT: 'hsl(var(--muted))',
+  				foreground: 'hsl(var(--muted-foreground))'
+  			},
+  			accent: {
+  				DEFAULT: 'hsl(var(--accent))',
+  				foreground: 'hsl(var(--accent-foreground))'
+  			},
+  			destructive: {
+  				DEFAULT: 'hsl(var(--destructive))',
+  				foreground: 'hsl(var(--destructive-foreground))'
+  			},
+  			border: 'hsl(var(--border))',
+  			input: 'hsl(var(--input))',
+  			ring: 'hsl(var(--ring))',
+  			chart: {
+  				'1': 'hsl(var(--chart-1))',
+  				'2': 'hsl(var(--chart-2))',
+  				'3': 'hsl(var(--chart-3))',
+  				'4': 'hsl(var(--chart-4))',
+  				'5': 'hsl(var(--chart-5))'
+  			}
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		},
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		fontFamily: {}
+  	}
   },
   plugins: [require("tailwindcss-animate")], // Shadcn UI 必需的动画插件
 } satisfies Config
