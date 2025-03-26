@@ -1,3 +1,16 @@
+'use client'; // <--- 添加这一行!
+
+// 删除重复的Link导入，因为在下方已经有相同的导入声明
+// 删除重复的Button导入，因为在下方已经有相同的导入声明
+// 删除重复的motion导入，因为在下方已经有相同的导入声明
+
+// ... (组件剩余代码保持不变) ...
+
+const HeroSection = () => {
+  // ...
+};
+
+// 删除重复的默认导出，因为文件末尾已经有 export default CoursesSection
 import Image from 'next/image';
 import Link from 'next/link';
 // 导入 Shadcn Card 和 Button
