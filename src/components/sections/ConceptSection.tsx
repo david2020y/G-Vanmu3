@@ -1,35 +1,102 @@
-const ConceptSection = () => {
-    return (
-      // Alternating background color for visual separation
-      <section id="about" className="w-full py-16 md:py-24 lg:py-32 bg-white">
-        <div className="container px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center space-y-4 mb-12">
-            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl text-brand-dark">
-              学院理念
-            </h2>
-            <p className="text-gray-600 md:text-lg">
-              我们的核心价值与愿景
-            </p>
-          </div>
-          <div className="max-w-4xl mx-auto text-left md:text-lg text-gray-700 space-y-6">
-            <p>
-              梵慕学院致力于为追求<strong className="font-semibold text-brand-dark">精神成长</strong>与<strong className="font-semibold text-brand-dark">优雅生活方式</strong>的现代人，提供一个结合东方禅修智慧与现代生活美学的学习与交流平台。
-            </p>
-            <p>
-              我们相信，内心的宁静与外在的雅致相辅相成。通过系统性的课程与实践，我们引导学员<strong className="font-semibold text-brand-dark">观照内心、提升觉知</strong>，同时培养对生活细节的<strong className="font-semibold text-brand-dark">审美感知</strong>与<strong className="font-semibold text-brand-dark">创造能力</strong>。
-            </p>
-            <p>
-              在梵慕，您将学会在喧嚣的世界中找到<strong className="font-semibold text-brand-dark">内心的平衡点</strong>，将禅的智慧融入日常，以更加<strong className="font-semibold text-brand-dark">从容、专注、优雅</strong>的态度面对生活。
-            </p>
-            {/* You can add Founder/Tutor info here later */}
-            {/* <div className="mt-8 pt-8 border-t">
-               <h3 className="text-xl font-semibold mb-4 text-center text-brand-dark">创始人寄语</h3>
-               <p className="italic text-center">"..."</p>
-            </div> */}
-          </div>
-        </div>
-      </section>
-    );
+import Image from 'next/image';
+import Link from 'next/link';
+// 导入 Shadcn Card 和 Button
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion"; // 导入 motion
+
+// 课程数据
+const featuredCourses = [
+  {
+    title: "正念冥想入门",
+    description: "学习基础冥想技巧，培养专注力，释放压力，回归当下。",
+    image: "/images/course1.jpg", // 相对于 public 目录的路径
+    link: "mailto:info@fanmu.com?subject=咨询：正念冥想入门",
+  },
+  {
+    title: "生活美学与茶道",
+    description: "在茶香袅袅中体会仪式感，提升生活品味与内在涵养。",
+    image: "/images/course2.jpg",
+    link: "mailto:info@fanmu.com?subject=咨询：生活美学与茶道",
+  },
+  {
+    title: "禅意插花艺术",
+    description: "通过插花感悟自然之美，观察无常，表达内心宁静。",
+    image: "/images/course3.jpg",
+    link: "mailto:info@fanmu.com?subject=咨询：禅意插花艺术",
+  },
+];
+
+const CoursesSection = () => {
+  // 动画变体
+  const sectionVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.15, delayChildren: 0.1 } }, // 让子元素错开出现
   };
-  
-  export default ConceptSection;
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  };
+
+  return (
+    <motion.section // 添加动画
+      id="courses"
+      className="w-full py-16 md:py-24 lg:py-32 bg-brand-beige"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={sectionVariants}
+    >
+      <div className="container px-4 md:px-6">
+        <motion.div // 标题动画
+          className="max-w-3xl mx-auto text-center space-y-4 mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl text-brand-dark">
+            精选课程
+          </h2>
+          <p className="text-gray-600 md:text-lg">
+            开启你的禅修与美学之旅
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {featuredCourses.map((course, index) => (
+            <motion.div key={index} variants={cardVariants}> {/* 卡片动画 */}
+              {/* 使用 Shadcn Card */}
+              <Card className="flex flex-col overflow-hidden h-full transition-shadow hover:shadow-lg">
+                <CardHeader className="p-0">
+                  <div className="relative w-full aspect-[16/10]">
+                    {/* 使用 Next Image */}
+                    <Image
+                      src={course.image}
+                      alt={course.title}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      priority={index < 3}
+                    />
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6 flex-grow flex flex-col">
+                  <CardTitle className="text-xl font-semibold mb-2 text-brand-dark">{course.title}</CardTitle>
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">{course.description}</p>
+                </CardContent>
+                <CardFooter className="p-6 pt-0 mt-auto">
+                  {/* 使用 Shadcn Button */}
+                  <Button asChild variant="outline" className="w-full border-brand-brown text-brand-brown hover:bg-brand-brown/10 hover:text-brand-brown">
+                    <Link href={course.link}>咨询详情</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </motion.section>
+  );
+};
+
+export default CoursesSection;
