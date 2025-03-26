@@ -23,19 +23,19 @@ const featuredCourses = [
   {
     title: "正念冥想入门",
     description: "学习基础冥想技巧，培养专注力，释放压力，回归当下。",
-    image: "/images/course1.jpg", // 相对于 public 目录的路径
+    image: "/images/course1.png", // 相对于 public 目录的路径
     link: "mailto:info@fanmu.com?subject=咨询：正念冥想入门",
   },
   {
     title: "生活美学与茶道",
     description: "在茶香袅袅中体会仪式感，提升生活品味与内在涵养。",
-    image: "/images/course2.jpg",
+    image: "/images/course2.png",
     link: "mailto:info@fanmu.com?subject=咨询：生活美学与茶道",
   },
   {
     title: "禅意插花艺术",
     description: "通过插花感悟自然之美，观察无常，表达内心宁静。",
-    image: "/images/course3.jpg",
+    image: "/images/course3.png",
     link: "mailto:info@fanmu.com?subject=咨询：禅意插花艺术",
   },
 ];
