@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; // Or Noto Sans SC
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header"; // Assuming Header component exists
-import Footer from "@/components/Footer"; // Assuming Footer component exists
-import { cn } from "@/lib/utils"; // Shadcn utility
+import { cn } from "@/lib/utils";
+import { AppShell } from "@/components/layout/AppShell";
 
-// If you prefer Noto Sans SC:
-// import { Noto_Sans_SC } from "next/font/google";
-// const noto = Noto_Sans_SC({ subsets: ["latin"], weight: ["300", "400", "700"] });
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" }); // Setup for Tailwind
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-alt" });
 
 export const metadata: Metadata = {
-  title: "梵慕学院 - 禅修与生活美学",
-  description: "在梵慕学院，探索东方禅修智慧与现代生活美学的融合",
+  title: "U-TRACK | 全球学术规划与科研成长平台",
+  description:
+    "U-TRACK 为学生提供科研实验室、迷你大学学习中心、升学规划与全球资源，帮助青少年精准规划未来路径。",
+  metadataBase: new URL("https://u-track.example"),
+  openGraph: {
+    title: "U-TRACK | 全球学术规划与科研成长平台",
+    description:
+      "U-TRACK 为学生提供科研实验室、迷你大学学习中心、升学规划与全球资源，帮助青少年精准规划未来路径。",
+    type: "website",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -23,15 +30,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN" suppressHydrationWarning>
-      {/* Use cn utility from Shadcn for merging classes */}
-      <body className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          inter.variable // Apply font variable
-          // noto.className // Or apply Noto Sans SC classname
-        )}>
-        <Header /> {/* Add Header */}
-        <main className="flex-grow">{children}</main> {/* Page content */}
-        <Footer /> {/* Add Footer */}
+      <body
+        className={cn(
+          "bg-background text-foreground antialiased",
+          inter.variable,
+          manrope.variable,
+        )}
+      >
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

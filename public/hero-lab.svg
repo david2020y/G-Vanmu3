@@ -1,0 +1,53 @@
+<svg width="960" height="720" viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Students collaborating on robotics project</title>
+  <desc id="desc">Illustration of students building a robot arm in a modern lab environment with abstract shapes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#003D73" />
+      <stop offset="60%" stop-color="#0A4C8A" />
+      <stop offset="100%" stop-color="#4D9CEB" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#F5A623" />
+      <stop offset="100%" stop-color="#F9C86C" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" fill="url(#bg)" rx="48" />
+  <g fill="#FFFFFF" opacity="0.12">
+    <circle cx="160" cy="140" r="60" />
+    <circle cx="820" cy="120" r="80" />
+    <rect x="120" y="420" width="180" height="120" rx="24" />
+    <rect x="660" y="420" width="220" height="140" rx="28" />
+  </g>
+  <g transform="translate(200 180)">
+    <path d="M120 260c40-80 120-120 200-120s160 40 200 120" stroke="#F5A623" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.8" />
+    <path d="M60 260h440v20a32 32 0 0 1-32 32H92a32 32 0 0 1-32-32v-20z" fill="#F4F7FB" opacity="0.95" />
+    <g transform="translate(120 60)">
+      <rect x="-60" y="-40" width="140" height="120" rx="24" fill="#FFFFFF" opacity="0.85" />
+      <path d="M-30 0h80M10-20v40" stroke="#003D73" stroke-width="6" stroke-linecap="round" />
+      <circle cx="-30" cy="40" r="12" fill="#0A4C8A" />
+      <circle cx="30" cy="40" r="12" fill="#F5A623" />
+    </g>
+    <g transform="translate(320 40)">
+      <rect x="-80" y="-40" width="200" height="160" rx="30" fill="#FFFFFF" opacity="0.85" />
+      <path d="M-40 60l40-60 40 30 40-70" stroke="#0A4C8A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <circle cx="-40" cy="60" r="10" fill="#F5A623" />
+      <circle cx="0" cy="0" r="10" fill="#F5A623" />
+      <circle cx="80" cy="-40" r="10" fill="#F5A623" />
+    </g>
+    <g transform="translate(20 120)">
+      <rect x="0" y="0" width="80" height="160" rx="24" fill="#FFFFFF" opacity="0.75" />
+      <rect x="12" y="20" width="56" height="36" rx="12" fill="#003D73" opacity="0.75" />
+      <rect x="12" y="70" width="56" height="36" rx="12" fill="#0A4C8A" opacity="0.65" />
+      <rect x="12" y="120" width="56" height="24" rx="8" fill="#F5A623" opacity="0.9" />
+    </g>
+    <g transform="translate(420 120)">
+      <rect x="0" y="0" width="120" height="160" rx="30" fill="#FFFFFF" opacity="0.78" />
+      <path d="M40 40h40M60 20v40" stroke="#003D73" stroke-width="6" stroke-linecap="round" />
+      <rect x="24" y="80" width="72" height="40" rx="16" fill="url(#accent)" />
+    </g>
+  </g>
+  <text x="50%" y="92%" fill="#FFFFFF" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="42" text-anchor="middle" opacity="0.75">
+    U-TRACK Research & Learning Hub
+  </text>
+</svg>
