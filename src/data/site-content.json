@@ -1,0 +1,346 @@
+{
+  "global": {
+    "brand": {
+      "name": "U-TRACK",
+      "tagline": "Empower Your Dreams",
+      "mission": "以科研力、学术力与规划力驱动青少年实现全球升学梦想"
+    },
+    "stats": [
+      { "label": "藤校录取率", "value": "38%", "caption": "近三年平均" },
+      { "label": "科研导师", "value": "120+", "caption": "博士级别导师团队" },
+      { "label": "学员满意度", "value": "4.9/5", "caption": "家长与学生双重评价" },
+      { "label": "全球合作院校", "value": "60+", "caption": "覆盖美、英、加、澳等国家" }
+    ],
+    "services": [
+      {
+        "id": "programs",
+        "title": "学习中心",
+        "description": "AP、IB、AI、辩论、商赛与自习空间，构建全栈学习生态。",
+        "href": "/learning",
+        "icon": "AcademicCapIcon"
+      },
+      {
+        "id": "research",
+        "title": "Ivy Lab 科研",
+        "description": "博士导师一对一带领科研项目，产出国际会议与期刊成果。",
+        "href": "/research",
+        "icon": "BeakerIcon"
+      },
+      {
+        "id": "planning",
+        "title": "升学规划中心",
+        "description": "18 个月/12 个月定制升学路线，覆盖背景、考试、文书全链路。",
+        "href": "/admissions",
+        "icon": "MapIcon"
+      }
+    ],
+    "events": [
+      {
+        "title": "加州理工教授带来的前沿 AI 科研分享",
+        "date": "04.12",
+        "location": "线上直播",
+        "excerpt": "揭秘大模型科研方法论，现场答疑申请策略。"
+      },
+      {
+        "title": "IB 高分冲刺营家长说明会",
+        "date": "04.23",
+        "location": "上海线下",
+        "excerpt": "核心科目导师团分享 7 天 6 夜集训营亮点。"
+      }
+    ],
+    "success": [
+      {
+        "name": "Z 同学",
+        "result": "录取 MIT 计算机科学",
+        "story": "参与 U-TRACK AI Lab，完成多模态感知项目并获顶会 Poster。",
+        "avatarColor": "#4D9CEB"
+      },
+      {
+        "name": "L 同学",
+        "result": "录取 牛津 PPE",
+        "story": "辩论学院 + 商赛学院复合培养，三个月内完成五场国际赛事。",
+        "avatarColor": "#F5A623"
+      },
+      {
+        "name": "C 同学",
+        "result": "录取 UCB Bio",
+        "story": "Ivy Lab 生物方向产出一篇 SCI 二作，收获三封教授推荐信。",
+        "avatarColor": "#003D73"
+      }
+    ],
+    "cta": {
+      "title": "预约顾问，定制你的全球升学路径",
+      "description": "10 分钟完成背景评估，获得专属提升方案与奖学金资讯。",
+      "button": "立即预约",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "全球视野的青少年学术成长平台",
+      "subtitle": "科研 + 学习 + 升学一体化，陪伴学生从 8 至 12 年级构建竞争力。",
+      "ctaPrimary": {
+        "label": "预约升学评估",
+        "href": "#strong-cta"
+      },
+      "ctaSecondary": {
+        "label": "查看课程体系",
+        "href": "/learning"
+      },
+      "media": "/hero-lab.svg",
+      "mediaAlt": "学生在 U-TRACK 实验室进行机器人项目"
+    },
+    "sections": [
+      { "id": "overview", "label": "概览" },
+      { "id": "programs", "label": "核心服务" },
+      { "id": "services", "label": "活动快讯" },
+      { "id": "success", "label": "成功案例" },
+      { "id": "strong-cta", "label": "预约顾问" }
+    ]
+  },
+  "learning": {
+    "hero": {
+      "title": "迷你大学学习中心",
+      "subtitle": "以大学式课程体系覆盖 AP/IB/AI/辩论/商赛/自习六大板块，提前校准大学节奏。"
+    },
+    "tabs": ["AP", "IB", "AI", "辩论", "商赛", "自习"],
+    "programs": [
+      {
+        "id": "ap",
+        "title": "AP 学习中心",
+        "summary": "覆盖 12 门热门 AP 科目，提供冲 5 分密训。",
+        "outcomes": ["AP 课程成绩提升 1.8 分", "导师伴学 + 周测 + 备考营"],
+        "price": "¥19,800/学期",
+        "duration": "16 周",
+        "tags": ["线上线下结合", "1:6 小班"]
+      },
+      {
+        "id": "ib",
+        "title": "IB 辅导中心",
+        "summary": "TOK/EE/IA 全流程指导，兼顾 HL/SL 提分。",
+        "outcomes": ["平均提升 5 分", "原考官批改 + 模考反馈"],
+        "price": "¥22,600/学期",
+        "duration": "18 周",
+        "tags": ["HL/SL 全覆盖", "牛剑导师"]
+      },
+      {
+        "id": "ai",
+        "title": "AI 学院",
+        "summary": "从 Python 基础到大模型应用，真实数据集驱动项目。",
+        "outcomes": ["独立完成 AI 项目", "提交科研竞赛作品"],
+        "price": "¥25,800/期",
+        "duration": "12 周",
+        "tags": ["项目制学习", "Industry Mentor"]
+      },
+      {
+        "id": "debate",
+        "title": "辩论学院",
+        "summary": "WSDC/NSDA 双体系，锻炼批判思维与公众表达。",
+        "outcomes": ["国际赛季军", "英语表达力 +2 级"],
+        "price": "¥18,000/期",
+        "duration": "10 周",
+        "tags": ["外教团队", "沉浸式训练"]
+      },
+      {
+        "id": "business",
+        "title": "商业竞赛学院",
+        "summary": "涵盖 DECA、Wharton KWHS 等顶级赛事辅导。",
+        "outcomes": ["完成商业策划书", "团队协作与路演技巧"],
+        "price": "¥23,600/期",
+        "duration": "14 周",
+        "tags": ["实战导师", "投行导师"]
+      },
+      {
+        "id": "study",
+        "title": "自习中心 Study Hub",
+        "summary": "提供沉浸式学习场，配备督学与学术教练。",
+        "outcomes": ["打造学习规划", "实时学习数据反馈"],
+        "price": "¥8,800/学期",
+        "duration": "16 周",
+        "tags": ["沉浸式空间", "学术教练"]
+      }
+    ],
+    "faq": [
+      {
+        "question": "课程可以线上参与吗？",
+        "answer": "所有课程均支持线上线下双轨模式，学生可根据所在城市与时区灵活选择。"
+      },
+      {
+        "question": "是否提供阶段性评估？",
+        "answer": "每四周提供一次数据化学情分析与学习报告，家长可登录家校平台实时查看。"
+      },
+      {
+        "question": "如何匹配导师？",
+        "answer": "根据学生目标院校、年级与科目需求，由学术顾问匹配经验 ≥3 年的专业导师团队。"
+      }
+    ],
+    "cta": {
+      "title": "预约学术顾问，领取试听名额",
+      "description": "输入年级与目标科目，即可获得学习诊断与个性化课程建议。",
+      "button": "预约试听"
+    }
+  },
+  "research": {
+    "hero": {
+      "title": "Ivy Lab 科研中心",
+      "subtitle": "跨学科实验室、顶尖导师与国际发表通道，打造高中生科研名片。"
+    },
+    "tabs": ["物理", "化学", "生物", "计算机", "经济", "跨学科"],
+    "highlights": [
+      "博士导师一对一定制课题",
+      "两周一次进度评审 + 发表指导",
+      "国际会议 & SCI/SSCI 双通道",
+      "小班研讨 + 实验室实训"
+    ],
+    "structures": [
+      {
+        "title": "国际会议论文方向",
+        "duration": "12 周",
+        "modules": ["科研方法论训练", "数据分析与实验设计", "论文写作与汇报"]
+      },
+      {
+        "title": "SCI/SSCI 期刊方向",
+        "duration": "20 周",
+        "modules": ["导师双盲选题", "实验/实证推进", "期刊投稿与返修"]
+      }
+    ],
+    "outputs": [
+      "2023 ICRA 机器人会议 Poster 3 篇",
+      "Nature 子刊合作课题 1 项",
+      "SCI Q2-Q3 期刊论文 18 篇",
+      "SSCI 顶刊联合发表 6 篇"
+    ],
+    "mentors": [
+      {
+        "name": "Dr. Alice Wang",
+        "title": "MIT 机械工程博士",
+        "bio": "专注机器人感知与控制，在 IEEE T-RO 发文 10+ 篇。"
+      },
+      {
+        "name": "Dr. Daniel Kim",
+        "title": "斯坦福计算金融博士",
+        "bio": "指导学生完成金融科技实证课题，擅长大数据建模。"
+      },
+      {
+        "name": "Dr. Emily Chen",
+        "title": "牛津化学博士",
+        "bio": "带领学生参与合成化学实验，合作实验室位于苏黎世。"
+      }
+    ],
+    "cta": {
+      "title": "预约科研评估，匹配专属导师",
+      "description": "填写学术背景与研究兴趣，48 小时内完成导师匹配与课题建议。",
+      "button": "申请加入"
+    }
+  },
+  "admissions": {
+    "hero": {
+      "title": "升学规划中心",
+      "subtitle": "数据驱动的升学路线设计，从目标拆解到文书面试全程陪伴。"
+    },
+    "timeline": [
+      { "phase": "诊断咨询", "detail": "1 对 1 目标访谈，评估背景与学术竞争力。" },
+      { "phase": "目标设定", "detail": "锁定目标国家 & 院校梯度，生成年度提升图。" },
+      { "phase": "背景提升", "detail": "结合科研、实习、竞赛定制履历亮点。" },
+      { "phase": "考试准备", "detail": "TOEFL/IELTS/SAT/ACT 分阶段课程与模考。" },
+      { "phase": "文书面试", "detail": "导师陪伴头脑风暴、润色与模拟面试。" },
+      { "phase": "录取跟进", "detail": "Offer 决策建议与签证辅导。" }
+    ],
+    "packages": [
+      {
+        "name": "Ivy 冲刺 18 个月",
+        "price": "¥128,000",
+        "features": ["专属规划顾问", "科研/竞赛年度规划", "藤校校友文书团队", "面试官训练营", "家长季度汇报"]
+      },
+      {
+        "name": "Elite 名校 12 个月",
+        "price": "¥96,000",
+        "features": ["个性化升学计划", "背景活动设计", "文书三轮打磨", "英语面试强化", "选校策略会"]
+      }
+    ],
+    "cases": [
+      {
+        "title": "CS + AI 复合背景助力 CMU 录取",
+        "detail": "通过 AI Lab + 夏校申请 + 多伦多 Coop 实习组合，逆袭 CMU SCS。"
+      },
+      {
+        "title": "跨学科科研驱动的牛剑 PPE 案例",
+        "detail": "辩论学院与经济实验室联合规划，最终拿下牛津 PPE 与 LSE Philosophy 双 Offer。"
+      }
+    ],
+    "cta": {
+      "title": "立即连线升学顾问",
+      "description": "获取藤校冲刺与名校申请方案，锁定奖学金机会。",
+      "button": "联系顾问"
+    }
+  },
+  "resources": {
+    "hero": {
+      "title": "资源中心",
+      "subtitle": "精选出版物、媒体报道、家长俱乐部与活动日历。"
+    },
+    "items": [
+      { "title": "年度升学白皮书", "description": "覆盖美国、英国、加拿大最新录取数据与申请趋势。" },
+      { "title": "媒体中心", "description": "福布斯、彭博等国际媒体对 U-TRACK 的深度报道。" },
+      { "title": "家长俱乐部", "description": "每月分享会 + 城市沙龙，与顶尖家长同行。" },
+      { "title": "活动日历", "description": "实时更新讲座、工作坊与模拟面试营。" }
+    ],
+    "cta": {
+      "title": "订阅资源快讯",
+      "description": "加入邮件列表，第一时间获取升学趋势、科研名额与活动提醒。",
+      "button": "订阅"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "关于 U-TRACK",
+      "subtitle": "我们是一支来自藤校与顶尖研究机构的教育团队，致力于用科学方法赋能青少年。"
+    },
+    "values": [
+      { "title": "使命", "description": "以学生为中心，构建长周期成长体系。" },
+      { "title": "愿景", "description": "成为全球化家庭信赖的学术与升学伙伴。" },
+      { "title": "团队", "description": "来自 MIT、牛津、清华等院校的导师与规划顾问。" }
+    ],
+    "cta": {
+      "title": "加入我们的教育使命",
+      "description": "欢迎导师、顾问与合作高校加入 U-TRACK 生态。",
+      "button": "联系我们"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "联系 U-TRACK",
+      "subtitle": "填写表单或通过即时沟通渠道快速连接顾问。"
+    },
+    "channels": [
+      { "label": "咨询热线", "value": "+86 400-889-UTRK" },
+      { "label": "企业微信", "value": "u-track-consult" },
+      { "label": "邮箱", "value": "hello@u-track.com" }
+    ],
+    "cta": {
+      "title": "提交预约表单",
+      "description": "我们的升学顾问将在 24 小时内回访，提供个性化方案。",
+      "button": "提交信息"
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "常见问题",
+      "subtitle": "解答家长与学生最关注的课程、科研与升学问题。"
+    },
+    "items": [
+      {
+        "question": "如何保障科研项目的真实性？",
+        "answer": "所有科研项目均由合作高校实验室提供项目编号，可查询真实导师背景与实验记录。"
+      },
+      {
+        "question": "升学规划服务是否包含语言考试辅导？",
+        "answer": "我们提供 TOEFL/IELTS/SAT/ACT 全链路课程，可根据学生分数阶段定制班型。"
+      },
+      {
+        "question": "是否有奖学金或助学金？",
+        "answer": "针对低收入或表现突出的学生，提供最高 40% 的奖学金减免计划。"
+      }
+    ]
+  }
+}
